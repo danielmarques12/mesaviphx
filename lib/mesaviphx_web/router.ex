@@ -18,7 +18,7 @@ defmodule MesaviphxWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/restaurants/:a", RestaurantsController, :index
+    get "/restaurants", RestaurantsController, :index
   end
 
   # Other scopes may use custom stacks.
